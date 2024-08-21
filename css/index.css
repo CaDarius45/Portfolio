@@ -8,17 +8,58 @@ p{
 }
 
 #profile-pic{
-    z-index: 1;
     position: relative;
     width: 30%;
     aspect-ratio: 1/1;
-    border: 5px solid green;
+    border: 5px solid blue;
     border-radius: 50%;
+    animation: pulse 8s infinite;
+}
+
+#name{
+    font-size: 80px;
+    text-shadow: 3px 0px blue ,5px 0px red;
+    transform: rotate(5deg);
+    animation: turn 3s linear infinite;
 }
 
 #project-container{
     overflow: hidden;
     height: 800px;
+}
+
+#home-container{
+    >div{
+        z-index: 1;
+    }
+    height: 800px;
+}
+
+@keyframes pulse {
+    0%, 100%{
+      animation-timing-function: ease-in-out;
+    }
+    50%{
+    transform: scale(1.1);
+    }
+    100%{
+    transform: scale(1);
+    }
+}
+
+@keyframes turn {
+    25%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
 }
 
 #card{
@@ -41,9 +82,32 @@ p{
     background-color: black;
 }
 
-/* #profile-text{
-    font-family: "Yarndings 20", system-ui;
-} */
+#profile-text>p{
+    font-size: 30px;
+    text-shadow: 3px 1px blue;
+}
+
+.skill{
+    position: relative;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0%{
+        top:20px; 
+    }
+    50%{
+        top:40px;
+    }
+    100%{
+        top:20px;
+    }
+}
+
+.skill.javascript{
+    color: red;
+    left: 200px;
+}
 
 .skill_icon{
     z-index: 1;

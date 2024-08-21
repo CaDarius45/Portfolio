@@ -67,7 +67,7 @@
                       <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link text-danger" id="projects-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">About</button>
+                      <button class="nav-link text-danger" id="projects-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">Skills</button>
                     </li>
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="false">Projects</button>
@@ -82,30 +82,25 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                <div class="d-flex justify-content-start">
-                    <div>
+                <div class="container-xl d-flex flex-wrap align-items-center justify-content-around pt-5" id="home-container">
+                    <div class="container-xl d-flex align-items-center justify-content-around">
                         <img id="profile-pic" src="public/images/PUHS1924.JPG" alt="profile pic"> 
-                        <h1>Ca'Darius Brown</h1>
+                        <h1 id="name">Ca'Darius Brown</h1>
                     </div>
                     <div id="profile-text">
                         <p>
                           A software engineer and game developer passionate about crafting 
-                          immersive digital experiences. With a computer science degree 
-                          , they excel in game mechanics, performance optimization, and advanced graphics. 
-                          Recognized for their creativity and problem-solving abilities, Alex has worked on both indie 
-                          and major studio projects, always aiming to enhance interactive storytelling. Outside of coding, 
-                          Alex enjoys experimenting with new game designs and staying current by playing the latest game 
-                          releases for inspiration.
+                          immersive digital experiences with a AAS degree and software engineer certificate. 
+                          Having over 5 years of customers service experiences and 3 years fo management, hard work and dedication
                         </p>
                     </div>
                 </div>
             </div>
             <div class="tab-pane" id="about" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
-                <h1>About</h1>
-                <div id="skills_grid">
+                <div id="skills" class="container-xl d-flex flex-wrap align-items-center justify-content-around pt-5">
                     <div class="skill">
                       <img class="skill_icon" src="public/images/javascript.svg" alt="javascript_icon">
-                      <p>javascript</p>
+                      <p id="javascript">javascript</p>
                     </div>
                     <div class="skill">
                       <img class="skill_icon" src="public/images/html.svg" alt="html_icon">
