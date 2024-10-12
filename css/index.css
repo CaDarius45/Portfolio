@@ -29,10 +29,11 @@ p{
 }
 
 #home-container{
+    overflow: auto;
     >div{
         z-index: 1;
     }
-    height: 800px;
+    min-height: 800px;
 }
 
 @keyframes pulse {
@@ -89,6 +90,9 @@ p{
 
 .skill{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     animation: float 3s linear infinite;
 }
 
@@ -228,4 +232,13 @@ animation-delay: 2.5s;
     to {
         top: calc(100% + 40px);
     }
+}
+
+/* **************************Media Only****************************** */
+@media only screen and (max-width: 768px){
+    #profile-pic{ width: 30%; border: 5px solid red;}
+    #profile-text>p{font-size: 20px;}
+    #profile-header>#name{font-size: 50px;}
+
+    .big div {font-size: 12px!important;}
 }
