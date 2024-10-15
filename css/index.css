@@ -88,38 +88,49 @@ p{
     text-shadow: 3px 1px blue;
 }
 
+/* ************************************Skills Tab************************************ */
+/* each individual skill*/
 .skill{
-    position: relative;
+    position: absolute;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-items: center;
-    animation: float 3s linear infinite;
+    animation: float 3s linear infinite; 
+    >p{font-size: 30px;}
 }
-
-@keyframes float {
-    0%{
-        top:20px; 
-    }
-    50%{
-        top:40px;
-    }
-    100%{
-        top:20px;
-    }
+/* Skills is all the skills in one div*/
+#skills{
+    position: relative;
+    width: 100%;
+    height: 800px;
 }
-
-.skill.javascript{
-    color: red;
-    left: 200px;
-}
-
+/* Skill logals*/
 .skill_icon{
     z-index: 1;
-    position: relative;
-   width: 2em;
-   height: 2em; 
+    width: 5em;
+    height: 5em; 
 }
 
+.js {top: 4%; left: 18%; }
+.html { left: 30%; top: 80%; }
+.css { left: 08%; top: 68%;}
+
+.node { left: 02%; top: 30%;}
+.react { left: 43%; top: 50%;}
+.mongodb { right: 15%; top: 16%;}
+
+.python { right: 48%; top: 20%;}
+.django { right: 22%; bottom: 40%;}
+.post { right: 02%; top: 72%;}
+
+/* skills float animation */
+@keyframes float{
+    0%{transform: translate(0, 20px); }
+    50%{transform: translate(0, 40px);}
+    100%{transform: translate(0, 20px);}
+}
+
+/* ************************************matris background************************************ */
 .tab-content{
     background-color: black;
     color: white;
@@ -236,9 +247,14 @@ animation-delay: 2.5s;
 
 /* **************************Media Only****************************** */
 @media only screen and (max-width: 768px){
+    .big div {font-size: 5px!important;}
+    .letter div {font-size: 2px;}
+
     #profile-pic{ width: 30%; border: 5px solid red;}
     #profile-text>p{font-size: 20px;}
     #profile-header>#name{font-size: 50px;}
+    #home-container{min-height: 200px;}
 
-    .big div {font-size: 12px!important;}
+    .skill_icon{width: 2em;height: 2em; }
+    .skill>p{font-size: 25px;}
 }
