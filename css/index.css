@@ -7,6 +7,15 @@ p{
     font-style: italic;
 }
 
+/* ************************************Home Tab************************************ */
+#home-container{
+    overflow: auto;
+    >div{
+        z-index: 1;
+    }
+    min-height: 800px;
+}
+
 #profile-pic{
     position: relative;
     width: 30%;
@@ -16,36 +25,16 @@ p{
     animation: pulse 8s infinite;
 }
 
+#profile-text>p{
+    font-size: 30px;
+    text-shadow: 3px 1px blue;
+}
+
 #name{
     font-size: 80px;
     text-shadow: 3px 0px blue ,5px 0px red;
     transform: rotate(5deg);
     animation: turn 3s linear infinite;
-}
-
-#project-container{
-    overflow: hidden;
-    height: 800px;
-}
-
-#home-container{
-    overflow: auto;
-    >div{
-        z-index: 1;
-    }
-    min-height: 800px;
-}
-
-@keyframes pulse {
-    0%, 100%{
-      animation-timing-function: ease-in-out;
-    }
-    50%{
-    transform: scale(1.1);
-    }
-    100%{
-    transform: scale(1);
-    }
 }
 
 @keyframes turn {
@@ -61,31 +50,6 @@ p{
     100%{
         transform: rotate(5deg);
     }
-}
-
-#card{
-    width: 400px;
-    max-height: 420px;
-    border: 3px solid rgb(143, 3, 3);
-    box-shadow: 2px 2px 4px 3px rgba(231, 82, 82, 0.2), -2px -2px 4px 3px rgba(231, 82, 82, 0.8);
-}
-
-#card:hover{
-    transform: scale(1.1);
-}
-
-#card-img-top{
-    border-bottom: 2px solid red;
-}
-
-#card-body{
-    color: white;
-    background-color: black;
-}
-
-#profile-text>p{
-    font-size: 30px;
-    text-shadow: 3px 1px blue;
 }
 
 /* ************************************Skills Tab************************************ */
@@ -116,18 +80,83 @@ p{
 .css { left: 08%; top: 68%;}
 
 .node { left: 02%; top: 30%;}
-.react { left: 43%; top: 50%;}
+.react { left: 48%; top: 38%;}
 .mongodb { right: 15%; top: 16%;}
 
-.python { right: 48%; top: 20%;}
+.python { right: 48%; top: 10%;}
 .django { right: 22%; bottom: 40%;}
 .post { right: 02%; top: 72%;}
+
+.cplus { right: 32%; bottom: 20%;}
+.unreal { left: 23%; top: 52%;}
 
 /* skills float animation */
 @keyframes float{
     0%{transform: translate(0, 20px); }
     50%{transform: translate(0, 40px);}
     100%{transform: translate(0, 20px);}
+}
+
+/* ************************************Projects Tab************************************ */
+#project-container{
+    overflow: auto;
+    height: 800px;
+}
+
+#card{
+    width: 400px;
+    background-color: transparent;
+    max-height: 420px;
+    border: 3px solid rgb(143, 3, 3);
+    box-shadow: 2px 2px 4px 3px rgba(231, 82, 82, 0.2), -2px -2px 4px 3px rgba(231, 82, 82, 0.8);
+}
+
+#card:hover{
+    transform: scale(1.1);
+}
+
+#card-img-top{
+    opacity: 1;
+    border-bottom: 2px solid red;
+}
+
+#card-body{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+@keyframes pulse {
+    0%, 100%{
+      animation-timing-function: ease-in-out;
+    }
+    50%{
+    transform: scale(1.1);
+    }
+    100%{
+    transform: scale(1);
+    }
+}
+/* ************************************Contact Tab************************************ */
+#contact-container{
+    overflow: auto;
+    height: 800px;
+    >div{
+        z-index: 1;
+    }
+}
+.contact_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10% 50% 50% 10%;
+    width: 500px;
+    padding: 15px;
+    border: 3px solid rgb(12, 15, 192);
+}
+
+#linkendin-card, #github-card{
+    border-radius: 50%;
+    width: 100px;
 }
 
 /* ************************************matris background************************************ */
@@ -247,14 +276,19 @@ animation-delay: 2.5s;
 
 /* **************************Media Only****************************** */
 @media only screen and (max-width: 768px){
+    /* background */
     .big div {font-size: 5px!important;}
     .letter div {font-size: 2px;}
-
+    /* Home */
     #profile-pic{ width: 30%; border: 5px solid red;}
     #profile-text>p{font-size: 20px;}
     #profile-header>#name{font-size: 50px;}
     #home-container{min-height: 200px;}
-
+    /* skills */
     .skill_icon{width: 2em;height: 2em; }
     .skill>p{font-size: 25px;}
+    /* Projects */
+    #card{
+        width: 200px;
+    }
 }

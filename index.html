@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Ca'Darius Brown Portfolio</title>
+        <link href="public/images/icon-portofolio.svg" rel="icon">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/index.css">
@@ -81,7 +82,7 @@
        <section id="tabs">
         <!-- Tab panes -->
         <div class="tab-content">
-          <!-- ----------------------------------Home panes-------------------------------------- -->
+          <!-- ----------------------------------Home page-------------------------------------- -->
             <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 <div class="container-xl d-flex flex-wrap align-items-center justify-content-around pt-5" id="home-container">
                     <div class="container-xl d-flex align-items-center justify-content-around" id="profile-header">
@@ -97,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <!-- -------------------------------Skills panes-------------------------------------- -->
+            <!-- -------------------------------Skills page-------------------------------------- -->
             <div class="tab-pane" id="about" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
               <!-- <div id="skills" class="container-xl d-flex flex-wrap justify-content-around align-items-center pt-5"></div> -->
                 <div id="skills" class="container-xl pt-5">
@@ -136,15 +137,22 @@
                       <img class="skill_icon " src="public/images/postgresql.svg" alt="postgres_icon">
                       <p>postgresql</p>
                     </div>
+                    <div class="skill cplus">
+                      <img class="skill_icon " src="public/images/c++.svg" alt="c++_icon">
+                    </div>
+                    <div class="skill unreal">
+                      <img class="skill_icon " src="public/images/unreal-engine-svgrepo-com (1).svg" alt="Unreal_Engine_icon">
+                      <p>Unreal Engine</p>
+                    </div>
                 </div>
             </div>
-            <!-- -----------------------------project panes--------------------------------------- -->
+            <!-- -----------------------------project page--------------------------------------- -->
             <div class="tab-pane" id="projects" role="tabpanel" aria-labelledby="projects-tab" tabindex="0">
 
                 <div class="container-xl d-flex flex-wrap align-items-center justify-content-around pt-5" id="project-container">
                     
                         <div class="card" id="card">
-                            <img src="public/images/Mastermind.png" class="card-img-top" alt="..." id="card-img-top">
+                            <img src="public/images/Mastermind.png" class="card-img-top" alt="Mastermind_Game_Icon" id="card-img-top">
                             <div class="card-body" id="card-body">
                                 <h3 class="card-title "><a class="text-decoration-none" href="https://cadarius45.github.io/Mastermind_game/">Mastermind_game</a></h3>
                                 <p class="card-text">Web-base mastermind game</p>
@@ -153,7 +161,7 @@
         
                     
                         <div class="card" id="card">
-                            <img src="public/images/Task_manager.png" class="card-img-top" alt="..." id="card-img-top">
+                            <img src="public/images/Task_manager.png" class="card-img-top" alt="TaskManager_Icon" id="card-img-top">
                             <div class="card-body" id="card-body">
                                 <h3 class="card-title"><a class="text-decoration-none" href="https://ga-task-manager-3e42998d1b51.herokuapp.com/">Task_manager</a></h3>
                                 <p class="card-text">Task manager is an app that allow a user to keep track of their task that they have asign for themselves and can view others task if they want too</p>
@@ -162,7 +170,7 @@
                   
                     
                         <div class="card" id="card">
-                            <img src="public/images/Inconceivable_quiz.png" class="card-img-top" alt="..." id="card-img-top">
+                            <img src="public/images/Inconceivable_quiz.png" class="card-img-top" alt="InconceivableQuiz_Icon" id="card-img-top">
                             <div class="card-body" id="card-body">
                                 <h3 class="card-title"><a class="text-decoration-none" href="https://the-inconceivable-quiz-9a8d13d9923e.herokuapp.com/">Inconceivable_quiz</a></h3>
                                 <p class="card-text">A quiz game inspired by <a href="https://poki.com/en/g/the-impossible-quiz">"The Impossible Quiz"</a> with different trists </p>
@@ -171,10 +179,33 @@
                   
                 </div>
             </div>
+            <!-- -----------------------------contact page--------------------------------------- -->
             <div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                <h1>Contact</h1>
-                <a href="https://www.linkedin.com/in/ca-darius-brown-b11094121/">Linkedin</a>
-                <a href="https://github.com/CaDarius45">GitHub</a>
+
+              <div class="container-xl d-flex flex-wrap align-items-center justify-content-around pt-5" id="contact-container">
+
+                <div class="contact_card">
+                  <img src="public/images/Linkedin_screen.png" alt="Linkedin_screen" id="linkendin-card">
+                  <div class="body">
+                      <h3 class="card-title "><a class="text-decoration-none" href="https://www.linkedin.com/in/ca-darius-brown-b11094121/" target="_blank">Linkedin</a></h3>
+                  </div>
+                </div>
+  
+                <div class="contact_card">
+                  <img src="public/images/GitHub_Screen.png" alt="GitHub_Screen" id="github-card">
+                  <div class="body">
+                      <h3 class="card-title "><a class="text-decoration-none" href="https://github.com/CaDarius45" target="_blank">GitHub</a></h3>
+                  </div>
+                </div>
+
+                <div class="contact_card">
+                  <img src="public/images/icon-resume.svg" alt="GitHub_Screen" id="github-card">
+                  <div class="body">
+                      <h3 class="card-title "><a class="text-decoration-none" href="public/files/Updated resume.pdf" target="_blank">Resume</a></h3>
+                  </div>
+                </div>
+
+              </div>   
             </div>
           </div>
        </section>
