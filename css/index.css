@@ -28,6 +28,7 @@ p{
 #profile-text>p{
     font-size: 30px;
     text-shadow: 3px 1px blue;
+    margin-left: 10px;
 }
 
 #name{
@@ -75,20 +76,20 @@ p{
     height: 5em; 
 }
 
-.js {top: 4%; left: 18%; }
+.js {top: 4%; left: 10%; }
 .html { left: 30%; top: 80%; }
 .css { left: 08%; top: 68%;}
 
 .node { left: 02%; top: 30%;}
-.react { left: 48%; top: 38%;}
+.react { left: 50%; top: 35%;}
 .mongodb { right: 15%; top: 16%;}
 
-.python { right: 48%; top: 10%;}
-.django { right: 22%; bottom: 40%;}
-.post { right: 02%; top: 72%;}
+.python { right: 48%; top: 13%;}
+.django { right: 22%; bottom: 45%;}
+.post { right: 02%; top: 75%;}
 
-.cplus { right: 32%; bottom: 20%;}
-.unreal { left: 23%; top: 52%;}
+.cplus { right: 32%; bottom: 24%;}
+.unreal { left: 20%; top: 48%;}
 
 /* skills float animation */
 @keyframes float{
@@ -156,7 +157,7 @@ p{
 
 #linkendin-card, #github-card{
     border-radius: 50%;
-    width: 100px;
+    width: 20%;
 }
 
 /* ************************************matris background************************************ */
@@ -286,9 +287,11 @@ animation-delay: 2.5s;
     #home-container{min-height: 200px;}
     /* skills */
     .skill_icon{width: 2em;height: 2em; }
-    .skill>p{font-size: 25px;}
+    .skill>p{font-size: 18px;}
     /* Projects */
     #card{
         width: 200px;
+        margin-bottom: 5px;
     }
+    /* Contacts */
 }
